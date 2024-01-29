@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Addition Page</title>
+    <link rel="stylesheet" href="Project_addition_page.css">
+</head>
+<body>
+    <header>
+        <img src="path-to-your-logo.png" alt="Palette Prodigy Logo" id="logo">
+        <nav>
+            <!-- Navigation items -->
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <h1>Project Addition</h1>
+            <form action="/submit-project" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="projectName">Project Name</label>
+                    <input type="text" id="projectName" name="projectName" required>
+                </div>
+                <div class="form-group">
+                    <label for="projectImage">Project Image</label>
+                    <input type="file" id="projectImage" name="projectImage" required>
+                </div>
+                <div class="form-group">
+                    <label for="designCategory">Design Category</label>
+                    <select id="designCategory" name="designCategory" required>
+                        <option value="">Select a category</option>
+                        <option value="modern">Modern</option>
+                        <option value="country">Country</option>
+                        <option value="coastal">Coastal</option>
+                        <!-- Additional categories can be added here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+	<script>
+    document.getElementById('updateProjectForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        // Here you would normally send the data to the server
+        // For now, we'll just simulate a delay then redirect
+        setTimeout(function() {
+            window.location.href = '/Project_addition_page.html'; // Redirect
+        }, 1000); // Wait 1 second before redirecting
+    });
+</script>
+
+
+<footer>
+  <div class="footer-content">
+    <h2>Connect socially with <em>HAura</em>.</h2>
+    <div class="social-icons">
+      <a href="https://twitter.com/youraccount" class="social-icon">
+        <img src="image/X.png" alt="X">
+      </a>
+      <a href="https://facebook.com/youraccount" class="social-icon">
+        <img src="image/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://instagram.com/youraccount" class="social-icon">
+        <img src="image/instagram.png" alt="Instagram">
+      </a>
+      <a href="mailto:your@email.com" class="social-icon">
+        <img src="image/email.jpg" alt="Email">
+      </a>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a href="/about">About</a>
+    <a href="/video">Video</a>
+    <a href="/press">Press</a>
+    <a href="/blog">Blog</a>
+     <p><h6> 2024 Your Company Name. All rights reserved.</h6></p>
+  </div>
+</footer>
+
+</body>
+</html>

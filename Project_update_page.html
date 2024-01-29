@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Update Page</title>
+    <link rel="stylesheet" href="Project_update_page.css">
+</head>
+<body>
+    <header>
+        <!--<img src="image/logo.png" alt="Company Logo" id="logo">-->
+        <!-- Navigation and other header content can be added here -->
+    </header>
+    <main>
+        <div class="form-container">
+            <h1>Update Project</h1>
+            <form action="/update-project" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="projectName">Project Name:</label>
+                    <input type="text" id="projectName" name="projectName" value="Current Project Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="projectImage">Project Image:</label>
+                    <input type="file" id="projectImage" name="projectImage">
+                    <img src="current-project-image.jpg" alt="Current Project Image" class="project-image-preview">
+                </div>
+                <div class="form-group">
+                    <label for="designCategory">Design Category:</label>
+                    <select id="designCategory" name="designCategory" required>
+                        <!-- Populate options here, marking the current category as selected -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" required>Current project description...</textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Update Project</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>

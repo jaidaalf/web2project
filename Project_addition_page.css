@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body, h1, input, select, textarea, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eef3f8; /* Light blue background, adjusted to match logo style */
+    color: #2D3E50; /* Dark blue text color */
+}
+
+header {
+    background-color: #2D3E50; /* Dark blue background to match logo */
+    color: #ffffff;
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 150px; /* Adjust to match the size of your logo */
+}
+
+nav {
+    /* Navigation styles, if applicable */
+}
+
+.form-container {
+    background: white;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+h1 {
+    color: #2D3E50;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    color: #2D3E50;
+}
+
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #A4B8D3; /* Light blue border to match logo */
+    font-size: 1em;
+    color: #2D3E50;
+}
+
+input[type="file"] {
+    background-color: #DAE2ED; /* Lighter background for file input */
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #5C7EA9; /* Button color to match logo's blue */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #4A6991; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
+
+
+
+footer {
+  background-color: #2D3E50; /* Dark blue background */
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer-content h2 {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icon img {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
+}
+
+.footer-links {
+  background-color: #333; /* Slightly darker footer background */
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #4A6991; /* Lighter blue for hover */
+}
+
+

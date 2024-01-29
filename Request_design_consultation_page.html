@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Design Consultation</title>
+    <link rel="stylesheet" href="Request_design_consultation_page.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!-- Header content -->
+    </header>
+    <main>
+        <div class="form-container">
+            <h1>Request Design Consultation</h1>
+            <form id="consultationForm">
+                <div class="form-group">
+				    <i class="fas fa-home"></i><br>
+                    <label for="roomType">Room Type:</label>
+                    <select id="roomType" name="roomType" required>
+                        <option value="">Select Room Type</option>
+                        <option value="living-room">Living Room</option>
+                        <option value="bedroom">Bedroom</option>
+                        <option value="kitchen">Kitchen</option>
+                        <!-- Additional room types can be added here -->
+                    </select>
+                </div>
+                <div class="form-group">
+				    <i class="fas fa-ruler-horizontal"></i><br>
+                    <label for="roomWidth">Room Width (meters):</label>
+                    <input type="number" id="roomWidth" name="roomWidth" required>
+                </div>
+                <div class="form-group">
+				   <i class="fas fa-ruler-vertical"></i><br>  
+                    <label for="roomLength">Room Length (meters):</label>
+                    <input type="number" id="roomLength" name="roomLength" required>
+                </div>
+                <div class="form-group">
+				    <i class="fas fa-paint-brush"></i><br>  
+                    <label for="designCategory">Design Category:</label>
+                    <select id="designCategory" name="designCategory" required>
+                        <option value="">Select Design Category</option>
+                        <option value="modern">Modern</option>
+                        <option value="traditional">Traditional</option>
+                        <option value="contemporary">Contemporary</option>
+                        <!-- Additional design categories can be added here -->
+                    </select>
+                </div>
+                <div class="form-group">
+				     <i class="fas fa-palette"></i><br> 
+                    <label for="colorPreferences">Color Preferences:</label>
+                    <input type="text" id="colorPreferences" name="colorPreferences" required>
+                </div>
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+  <div class="footer-content">
+    <h2>Connect socially with <em>HAura</em>.</h2>
+    <div class="social-icons">
+      <a href="https://twitter.com/youraccount" class="social-icon">
+        <img src="image/X.png" alt="X">
+      </a>
+      <a href="https://facebook.com/youraccount" class="social-icon">
+        <img src="image/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://instagram.com/youraccount" class="social-icon">
+        <img src="image/instagram.png" alt="Instagram">
+      </a>
+      <a href="mailto:your@email.com" class="social-icon">
+        <img src="image/email.jpg" alt="Email">
+      </a>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a href="/about">About</a>
+    <a href="/video">Video</a>
+    <a href="/press">Press</a>
+    <a href="/blog">Blog</a>
+     <p><h6> 2024 Your Company Name. All rights reserved.</h6></p>
+  </div>
+</footer>
+
+    <script>
+        document.getElementById('consultationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            setTimeout(function() {
+                window.location.href = '/clients-homepage.html'; // Redirect
+            }, 1000); // Wait 1 second before redirecting
+        });
+    </script>
+</body>
+</html>
