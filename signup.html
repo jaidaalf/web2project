@@ -1,0 +1,62 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="signup.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+    <form id="userTypeForm">
+        <label>User Type:</label>
+        <select id="userType" onchange="showForm()">
+            <option value="designer">Designer</option>
+            <option value="client">Client</option>
+        </select>
+    </form>
+    <div id="designerForm" style="display:none;">
+        !-- Designer form fields here -->
+   <!---- <div id="clientForm" style="display:none;"
+        -- Client form fields here --
+    </div>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Aura - Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="signup.js"></script>
+</head>
+<body>
+    <header>
+        <img src="path_to_logo.png" alt="Home Aura Logo" width="150">
+        <h1>Create Your Account</h1>
+    </header>
+    <!-- User type selection form -->
+    <form id="userTypeForm">
+        <label for="userType">I am a:</label>
+        <select id="userType" name="userType" onchange="showForm()">
+            <option value="designer">Designer</option>
+            <option value="client">Client</option>
+        </select>
+    </form>
+    <!-- Designer form -->
+    <div id="designerForm" style="display:none;">
+        <form action="designer_homepage.html" method="post">
+            <!-- Designer specific fields -->
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+    <!-- Client form -->
+    <div id="clientForm" style="display:none;">
+        <form action="client_homepage.html" method="post">
+            <!-- Client specific fields -->
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>

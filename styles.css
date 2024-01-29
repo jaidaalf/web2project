@@ -1,0 +1,121 @@
+/*body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+*/
+
+/* Basic reset for styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e6e7e8; /* Light grey background */
+    color: #333; /* Dark grey text for contrast */
+    margin-top: 50px;
+    text-align: center;
+}
+
+header {
+    background-color: #39424e; /* Dark blue background */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+nav {
+    margin-bottom: 50px;
+}
+
+nav a {
+    color: #81d4fa; /* Light blue text for links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+form {
+    background-color: #ffffff; /* White background for form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: inline-block;
+    margin: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #556270; /* Dark blue background for button */
+    color: #ffffff; /* White text for contrast */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Rounded edges for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #6c7a89; /* Lighter blue on hover */
+}
+
+label {
+    display: block; /* Labels above inputs */
+    margin-top: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    body {
+        margin-top: 20px;
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 1em;
+    }
+
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+        width: 90%;
+    }
+}
