@@ -27,6 +27,44 @@ nav a {
     box-sizing: border-box;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.auth-buttons {
+    margin-top: 50px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.login {
+    background-color: #39424e; /* Adjust the color to your preference */
+}
+
+.signup {
+    background-color: #556270; /* Adjust the color to your preference */
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #e6e7e8; /* Light grey background */
